@@ -87,7 +87,7 @@ img.bg {
     }
 
     .copy {
-        font-size: 1.2em;
+        font-size: 1.3em;
     }
     .portfolio {
         margin: 20px;
@@ -431,7 +431,7 @@ body {
 }
 
 .about {
-    font-family: breeFont;
+    font-family: yregFont;
     padding-left: 2%;
     padding-right: 2%;
     color: #455a64;
@@ -444,7 +444,7 @@ br {
 }
 
 .copy {
-    font-family: breeFont;
+    font-family: yregFont;
     padding: 2%;
     color: #455a64;/*unused color #;*/
 }
