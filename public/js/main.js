@@ -58,7 +58,7 @@ $(function () {
         },
         'work_graphicdesign': function () {
             currentPage.hide();
-            currentPage = birds[5];
+            currentPage = birds[6];
             currentPage.show();
             // $("html, body").animate({ scrollTop: 0 });
             window.scrollTo(0, 0);
