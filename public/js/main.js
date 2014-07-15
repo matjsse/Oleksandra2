@@ -33,6 +33,7 @@ $(function () {
             currentPage.hide();
             currentPage = birds[2];
             currentPage.show();
+            window.scrollTo(0, 0);
         },
         'work_ss': function () {
             currentPage.hide();
@@ -53,6 +54,13 @@ $(function () {
             currentPage = birds[5];
             currentPage.show();
            // $("html, body").animate({ scrollTop: 0 });
+            window.scrollTo(0, 0);
+        },
+        'work_graphicdesign': function () {
+            currentPage.hide();
+            currentPage = birds[5];
+            currentPage.show();
+            // $("html, body").animate({ scrollTop: 0 });
             window.scrollTo(0, 0);
         }
     });
@@ -86,7 +94,9 @@ $(function () {
     $('.element4').click(function () {
         routie('work_lnl');
     });
-
+    $('.element5').click(function () {
+        routie('work_graphicdesign');
+    });
 
     function hide(elementsArray) {
         elementsArray.forEach(function (element) {
@@ -110,7 +120,8 @@ $(function () {
         pages[4].html(Handlebars.templates['work_mindandbody']());
         pages[5] = $(".page5");
         pages[5].html(Handlebars.templates['work_lnl']());
-
+        pages[6] = $(".page6");
+        pages[6].html(Handlebars.templates['work_graphicdesign']());
 
         return pages;
     }
