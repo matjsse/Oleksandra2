@@ -1,0 +1,1 @@
+D:\PORTFOLIO\Oleksandra2>handlebars public/templates -f public/js/templates.js
