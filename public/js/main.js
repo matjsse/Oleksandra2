@@ -3,96 +3,121 @@
  * jquery basics
  * handlebars basics
  * Created by matisse on 7/10/2014.
+ routie('home');
  */
-/*$(function () {
-    var defaultContent = "This is Hello World by JQuery"
-    //var homeContent = "this is home";
-    var about = Handlebars.templates['about'];
-    var home = Handlebars.templates['home']();
-    var work_mindandbody = Handlebars.templates['work_mindandbody']();
 
-    $(".page").html(home);
+$(function () {
 
-    $(".maintitle").click(function () {
-        console.log("main title");
-        $(".page").html(home);
-    });
+    var birds = initPages();
+    hide(birds);
+    birds[0].show();
+    var currentPage = birds[0];
 
-    $(".element1").click(function () {
-        $(".page").html(work_mindandbody);
-    });
-
-    $(".nav-contacts").click(function(){
-        $(".content").html(home);
-    });
-
-});*/
-
-$ (function () {
-
-    var pages = initPages();
-    hide(pages);
-    pages[0].show();
-    var currentPage = pages[0];
-
-    $('.nav-portfolio').click(function(){
-        //hide(pages);
-        currentPage.hide();
-        currentPage = pages[0];
-        currentPage.show();
-        //pages[0].show();
-    });
-
-    $('.nav-about').click(function(){
-        currentPage.hide();
-        currentPage = pages[0];
-        currentPage.show();
-    });
+    console.log(window.location.hash);
+    if (!window.location.hash) routie('home');
 
 
+    routie({
+        'home': function () {
+            currentPage.hide();
+            currentPage = birds[0];
+            currentPage.show();
+        },
+        'about': function () {
+            currentPage.hide();
+            currentPage = birds[1];
+            currentPage.show();
+        },
 
-    $('.nav-contacts').click(function(){
-        currentPage.hide();
-        currentPage = pages[1];
-        currentPage.show();
-    });
-
-    $('.element1').click(function(){
-        currentPage.hide();
-        currentPage = pages[2];
-        currentPage.show();
+        'work_tca': function () {
+            currentPage.hide();
+            currentPage = birds[2];
+            currentPage.show();
+        },
+        'work_ss': function () {
+            currentPage.hide();
+            currentPage = birds[3];
+            currentPage.show();
+           // $("html, body").animate({ scrollTop: 0 });
+            window.scrollTo(0, 0);
+        },
+        'work_mnb': function () {
+            currentPage.hide();
+            currentPage = birds[4];
+            currentPage.show();
+           // $("html, body").animate({ scrollTop: 0 });
+            window.scrollTo(0, 0);
+        },
+        'work_lnl': function () {
+            currentPage.hide();
+            currentPage = birds[5];
+            currentPage.show();
+           // $("html, body").animate({ scrollTop: 0 });
+            window.scrollTo(0, 0);
+        }
     });
 
 
-    function hide(pages) {
-        pages.forEach(function(page) {
-            page.hide();
-        })
+    $('.nav-title').click(function () {
+        routie('home');
+    });
+
+    $('.nav-portfolio').click(function () {
+        routie('home');
+    });
+
+    $('.nav-about').click(function () {
+        routie('about');
+    });
+    $('.nav-contacts').click(function () {
+        $('html, body').animate({scrollTop: $(document).height()}, 'medium');
+        return false;
+    });
+
+    $('.element1').click(function () {
+        routie('work_tca');
+    });
+    $('.element2').click(function () {
+        routie('work_ss');
+    });
+    $('.element3').click(function () {
+        routie('work_mnb');
+    });
+    $('.element4').click(function () {
+        routie('work_lnl');
+    });
+
+
+    function hide(elementsArray) {
+        elementsArray.forEach(function (element) {
+            element.hide();
+        });
     }
 
 
     function initPages() {
-        var about = Handlebars.templates['about']();
-        var home = Handlebars.templates['home']();
-        var work_mindandbody = Handlebars.templates['work_mindandbody']();
-
-        var page1 = $(".page1");
-        page1.html(home);
-        var page2 = $(".page2");
-        page2.html(about);
-        var mindbody = $(".page3");
-        mindbody.html(work_mindandbody);
-
         var pages = [];
 
-        pages[0] = page1;
-        pages[1] = page2;
-        pages[2] = mindbody;
+        pages[0] = $(".page0");
+        pages[0].html(Handlebars.templates['home']());
+        pages[1] = $(".page1");
+        pages[1].html(Handlebars.templates['about']());
+        pages[2] = $(".page2");
+        pages[2].html(Handlebars.templates['work_tca']());
+        pages[3] = $(".page3");
+        pages[3].html(Handlebars.templates['work_ss']());
+        pages[4] = $(".page4");
+        pages[4].html(Handlebars.templates['work_mindandbody']());
+        pages[5] = $(".page5");
+        pages[5].html(Handlebars.templates['work_lnl']());
+
 
         return pages;
     }
 
 });
+
+
 
 
 
