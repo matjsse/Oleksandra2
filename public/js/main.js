@@ -69,6 +69,13 @@ $(function () {
             currentPage.show();
             // $("html, body").animate({ scrollTop: 0 });
             window.scrollTo(0, 0);
+        },
+        'work_lettering': function () {
+            currentPage.hide();
+            currentPage = birds[8];
+            currentPage.show();
+            // $("html, body").animate({ scrollTop: 0 });
+            window.scrollTo(0, 0);
         }
     });
 
@@ -107,6 +114,9 @@ $(function () {
     $('.element6').click(function () {
         routie('work_ui');
     });
+    $('.element8').click(function () {
+        routie('work_lettering');
+    });
 
     function hide(elementsArray) {
         elementsArray.forEach(function (element) {
@@ -134,6 +144,8 @@ $(function () {
         pages[6].html(Handlebars.templates['work_graphicdesign']());
         pages[7] = $(".page7");
         pages[7].html(Handlebars.templates['work_ui']());
+        pages[8] = $(".page8");
+        pages[8].html(Handlebars.templates['work_lettering']());
 
         return pages;
     }
