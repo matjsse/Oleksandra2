@@ -56,7 +56,7 @@ $(function () {
            // $("html, body").animate({ scrollTop: 0 });
             window.scrollTo(0, 0);
         },
-        'work_graphicdesign': function () {
+        'work_bindingslogo': function () {
             currentPage.hide();
             currentPage = birds[6];
             currentPage.show();
@@ -109,7 +109,7 @@ $(function () {
         routie('work_lnl');
     });
     $('.element5').click(function () {
-        routie('work_graphicdesign');
+        routie('work_bindingslogo');
     });
     $('.element6').click(function () {
         routie('work_ui');
@@ -141,7 +141,7 @@ $(function () {
         pages[5] = $(".page5");
         pages[5].html(Handlebars.templates['work_lnl']());
         pages[6] = $(".page6");
-        pages[6].html(Handlebars.templates['work_graphicdesign']());
+        pages[6].html(Handlebars.templates['work_bindingslogo']());
         pages[7] = $(".page7");
         pages[7].html(Handlebars.templates['work_ui']());
         pages[8] = $(".page8");
