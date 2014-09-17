@@ -91,7 +91,7 @@ $(function () {
     $('.nav-about').click(function () {
         routie('about');
     });
-    $('.nav-contacts').click(function () {
+    $('.nav-connect').click(function () {
         $('html, body').animate({scrollTop: $(document).height()}, 'medium');
         return false;
     });
