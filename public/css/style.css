@@ -1,63 +1,18 @@
-@font-face {
-    font-family: vrindaFont;
-    src: url("../fonts/vrinda_F.ttf");
-}
 
 @font-face {
-    font-family: alakoFont;
-    src: url("../fonts/alako_5.ttf");
+    font-family: sourceBlackFont;
+    src: url("../fonts/source_sans_pro/SourceSansPro-Black.otf");
 }
+
 
 @font-face {
-    font-family: claredonFont;
-    src: url("../fonts/claredon.ttf");
+    font-family: defaultFont;
+    src: url("../fonts/source_sans_pro/SourceSansPro-ExtraLight.otf");
 }
 
-@font-face {
-    font-family: yxlightFont;
-    src: url("../fonts/yanone-xlight.ttf");
-}
 
-@font-face {
-    font-family: ylightFont;
-    src: url("../fonts/yanone-light.ttf");
-}
+/* TODO: change the height percentage of title and title's parent */
 
-@font-face {
-    font-family: yregFont;
-    src: url("../fonts/yanone-reg.ttf");
-}
-
-@font-face {
-    font-family: yboldFont;
-    src: url("../fonts/yanone-bold.ttf");
-}
-
-@font-face {
-    font-family: trocchiFont;
-    src: url("../fonts/Trocchi-Bold.otf");
-}
-
-@font-face {
-    font-family: breeFont;
-    src: url("../fonts/BreeSerif-Regular.otf");
-}
-
-img.bg {
-    /* Set rules to fill background */
-    min-height: 100%;
-    min-width: 1024px;
-
-    /* Set up proportionate scaling */
-    width: 100%;
-    height: auto;
-
-    /* Set up positioning */
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -1000; /* the border of container wasn't showing up without z-index*/
-}
 
 @media screen and (max-width: 1024px) {
     /* Specific to this particular image */
@@ -65,10 +20,6 @@ img.bg {
         left: 50%;
         margin-left: -512px; /* 50% */
     }
-
-    /*.portfolio {
-        margin: 7000px;
-    }*/
 }
 
 @media all and (min-width: 960px) {
@@ -91,9 +42,6 @@ img.bg {
         font-size: 1.3em;
     }
 
-    /*.portfolio {
-        margin: 20px;
-    }*/
 }
 
 @media all and (max-width: 959px) and (min-width: 600px) {
@@ -115,10 +63,6 @@ img.bg {
     .copy {
         font-size: 1.1em;
     }
-
-    /*.portfolio {
-        margin: 20px;
-    }*/
 }
 
 @media all and (max-width: 599px) and (min-width: 320px) {
@@ -141,10 +85,6 @@ img.bg {
         font-size: 1em;
     }
 
-    /*.portfolio {
-        margin: 10px;
-    }*/
-
 }
 
 @media all and (max-width: 320px) {
@@ -162,10 +102,6 @@ img.bg {
         font-size: 1.6em;
         text-align: center;
     }
-
-    /*.portfolio {
-        margin: 5px;
-    }*/
 
 }
 
@@ -188,71 +124,99 @@ a:active {
     color: #455a64;
 }
 
-/*a:visited {
-text-decoration:none;
-color: #404041;
-}*/
 html {
-
     border: 10px;
     border-style: solid;
     border-color: white;
 }
 
 body {
-    /* background-image:url("img/blur4.jpg");*/
-
+    font-family: defaultFont;
     background-size: cover;
-
 }
+
+/*
 .title11{
-text-shadow: 0px 1px 2px rgba(107, 2, 2, 0.7), 0px 1px 20px rgba(107, 2, 2, 0.7);
+ text-shadow: 0px 1px 2px rgba(107, 2, 2, 0.7), 0px 1px 20px rgba(107, 2, 2, 0.7);
 }
 .title12{
-    text-shadow: 0px 1px 2px rgba(107, 2, 2, 0.7), 0px 1px 20px rgba(107, 2, 2, 0.7);
+  /*text-shadow: 0px 1px 2px rgba(107, 2, 2, 0.7), 0px 1px 20px rgba(107, 2, 2, 0.7);
 }
+
+*/
+
 .container {
     width: 100%;
     margin-bottom: 0;
     padding: 0;
 }
 
+
 .navbar-custom {
     background-color: #bf360c;
-    background-image: url("../img/pattern-web-03.png");
-    padding: 0;
-    margin: 0;
-    height: 160px;
+    height: 150px;
     -webkit-box-shadow: inset 0px 1px 20px 0px rgba(107, 2, 2, 0.7);
     -moz-box-shadow: inset 0px 1px 20px 0px rgba(107, 2, 2, 0.7);
     box-shadow: inset 0px 1px 20px 0px rgba(107, 2, 2, 0.7);
 }
 
-.title11 {
-    display: inline-block;
-    /*background-color: yellow;*/
-    font-family: breeFont;
-    color: #ffffff;
-}
-
-.title12 {
-    display: inline-block;
-    /*background-color: yellow;*/
-    font-family: breeFont;
-    color: #ffffff;
-    margin-top: -5%;
-}
-
 
 .navbar-content {
-    padding-top: 1%;
+    height: 100%;
+    padding-top: 1.7%;
     padding-right: 4%;
     padding-left: 4%;
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-
+    position: relative;
 }
+
+
+
+
+.title11 {
+    display: inline-block;
+    font-size: 3em;
+    line-height: 90%;
+}
+
+.title12 {
+    display: inline-block;
+    color: #ffffff;
+    font-size: 3em;
+    line-height: 90%;
+}
+
+
+/* Grow Rotate */
+.title {
+    position: relative;
+    /*height: 100%;*/
+    font-family: sourceBlackFont;
+    color: #ffffff;
+    text-transform: uppercase;
+    /*animation */
+    display: inline-block;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.ap-bottom {
+    position: absolute;
+    bottom: 20px;
+}
+.title:hover, .title:focus, .title:active {
+    -webkit-transform: scale(1.1) rotate(4deg);
+    transform: scale(1.1) rotate(4deg);
+    cursor: pointer;
+}
+
 
 
 .navmenu{
@@ -261,19 +225,11 @@ text-shadow: 0px 1px 2px rgba(107, 2, 2, 0.7), 0px 1px 20px rgba(107, 2, 2, 0.7)
 
 }
 .nav {
-
     color: white;
     font-size: 2em;
-    /*background-color:yellow;*/
-    font-family: ylightFont;
     text-align: center;
     font-smooth: always;
     border-radius: 3px;
-
-
-
-
-
 }
 
 .nav:hover {
@@ -362,7 +318,7 @@ text-shadow: 0px 1px 2px rgba(107, 2, 2, 0.7), 0px 1px 20px rgba(107, 2, 2, 0.7)
 }
 
     /*box-shadow: 0px -0.5px 1px 0px rgba(0, 0, 0, 0.15), -1px 0px 2px 0px rgba(0, 0, 0, 0.15), 1px 0px 2px 0px rgba(0, 0, 0, 0.15), 0px 5px 10px 0px rgba(0, 0, 0, 0.22);
-*/}
+*/
 
 /*.portfolio:active {
     border-color: #404041;
@@ -403,7 +359,6 @@ text-shadow: 0px 1px 2px rgba(107, 2, 2, 0.7), 0px 1px 20px rgba(107, 2, 2, 0.7)
     font-size: 1.5em;
     line-height: 1em;
     letter-spacing: .07em;
-    font-family: yregFont;
     border-radius: 4px;
     /*text-transform: uppercase;*/
 
@@ -475,7 +430,6 @@ text-shadow: 0px 1px 2px rgba(107, 2, 2, 0.7), 0px 1px 20px rgba(107, 2, 2, 0.7)
 
 .weblinks {
     text-align: center;
-    font-family: yregFont;
     font-size: 1.5em;
     padding: 5px;
     color: white;
@@ -499,14 +453,12 @@ text-shadow: 0px 1px 2px rgba(107, 2, 2, 0.7), 0px 1px 20px rgba(107, 2, 2, 0.7)
 }
 
 .copyright {
-    font-family: yregFont;
     color: #ffffff;
     text-align: center;
 
 }
 
 .about {
-    font-family: yregFont;
     padding-left: 2%;
     padding-right: 2%;
     color: #455a64;
@@ -519,7 +471,6 @@ br {
 }
 
 .copy {
-    font-family: yregFont;
     padding: 2%;
     color: #455a64; /*unused color #;*/
 }
