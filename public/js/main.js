@@ -17,65 +17,46 @@ $(function () {
     if (!window.location.hash) routie('home');
 
 
+    /**
+     * Open the page with the given index and close all other pages
+     * @param index
+     */
+    var goToPageWithIndex = function (index) {
+        currentPage.hide();
+        currentPage = birds[index];
+        currentPage.show();
+        window.scrollTo(0, 0);
+    }
+
+
     routie({
         'home': function () {
-            currentPage.hide();
-            currentPage = birds[0];
-            currentPage.show();
+            goToPageWithIndex(0);
         },
         'about': function () {
-            currentPage.hide();
-            currentPage = birds[1];
-            currentPage.show();
+            goToPageWithIndex(1);
         },
 
         'work_tca': function () {
-            currentPage.hide();
-            currentPage = birds[2];
-            currentPage.show();
-            window.scrollTo(0, 0);
+            goToPageWithIndex(2);
         },
         'work_ss': function () {
-            currentPage.hide();
-            currentPage = birds[3];
-            currentPage.show();
-           // $("html, body").animate({ scrollTop: 0 });
-            window.scrollTo(0, 0);
+            goToPageWithIndex(3);
         },
         'work_mnb': function () {
-            currentPage.hide();
-            currentPage = birds[4];
-            currentPage.show();
-           // $("html, body").animate({ scrollTop: 0 });
-            window.scrollTo(0, 0);
+            goToPageWithIndex(4);
         },
         'work_lnl': function () {
-            currentPage.hide();
-            currentPage = birds[5];
-            currentPage.show();
-           // $("html, body").animate({ scrollTop: 0 });
-            window.scrollTo(0, 0);
+            goToPageWithIndex(5);
         },
         'work_bindingslogo': function () {
-            currentPage.hide();
-            currentPage = birds[6];
-            currentPage.show();
-            // $("html, body").animate({ scrollTop: 0 });
-            window.scrollTo(0, 0);
+            goToPageWithIndex(6);
         },
         'work_ui': function () {
-            currentPage.hide();
-            currentPage = birds[7];
-            currentPage.show();
-            // $("html, body").animate({ scrollTop: 0 });
-            window.scrollTo(0, 0);
+            goToPageWithIndex(7);
         },
         'work_lettering': function () {
-            currentPage.hide();
-            currentPage = birds[8];
-            currentPage.show();
-            // $("html, body").animate({ scrollTop: 0 });
-            window.scrollTo(0, 0);
+            goToPageWithIndex(8);
         }
     });
 
