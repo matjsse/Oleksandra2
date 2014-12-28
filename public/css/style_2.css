@@ -1,0 +1,41 @@
+
+
+@font-face {
+    font-family: sourceBlackFont;
+    src: url("../fonts/SourceSansPro-Black.otf");
+}
+
+html {
+    border: 10px;
+    border-style: solid;
+    border-color: black;
+
+}
+
+body{
+    background-color: #F3F3F3;
+}
+.navigation{
+    background-color: yellow;
+    height: 100px;
+
+}
+
+.name {
+    font-family: sourceBlackFont;
+    font-size: 3em;
+    text-align: right;
+}
+
+.lastname {
+    font-family: sourceBlackFont;
+    font-size: 3em;
+    text-align: right;
+    margin-top: -8% ;
+}
+
+
+
+.os-menu{
+    display: inline-block;
+}
