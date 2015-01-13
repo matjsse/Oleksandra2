@@ -1,29 +1,8 @@
-@font-face {
-    font-family: vrindaFont;
-    src: url("../fonts/vrinda_F.ttf");
-}
-
-@font-face {
-    font-family: alakoFont;
-    src: url("../fonts/alako_5.ttf");
-}
 
 @font-face {
     font-family: claredonFont;
     src: url("../fonts/claredon.ttf");
 }
-
-@font-face {
-    font-family: yxlightFont;
-    src: url("../fonts/yanone-xlight.ttf");
-}
-
-@font-face {
-    font-family: ylightFont;
-    src: url("../fonts/yanone-light.ttf");
-}
-
-
 
 @font-face {
     font-family: sourceLightFont;
@@ -199,13 +178,32 @@ body {
 
 .navbar-custom {
     background-color: #ffffff;
-
+    height: 10em;
     padding: 0;
     margin: 0;
+}
 
-    /*-webkit-box-shadow: inset 0px 1px 20px 0px rgba(107, 2, 2, 0.7);*/
-    /*-moz-box-shadow: inset 0px 1px 20px 0px rgba(107, 2, 2, 0.7);*/
-    /*box-shadow: inset 0px 1px 20px 0px rgba(107, 2, 2, 0.7);*/
+
+.navbar-content {
+    padding-top: 3%;
+    padding-right: 4%;
+    padding-left: 4%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+}
+
+
+.absolute-bottom{
+   bottom:20px;
+   position: absolute;
+}
+
+
+.absolute-parent {
+  height: 100%;
+  position: relative;
 }
 
 .title11 {
@@ -221,7 +219,7 @@ body {
     display: inline-block;
     /*background-color: yellow;*/
     font-family: sourceBlackFont;
-    text-: ;
+    text-size: 3em;
     color: #000000;
     text-transform: uppercase;
     /*margin-top: -10%;*/
@@ -230,23 +228,24 @@ body {
 }
 
 
-
-.navbar-content {
-    padding-top: 3%;
-    padding-right: 4%;
-    padding-left: 4%;
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-
+/* Grow Rotate */
+.grow-rotate {
+    display: inline-block;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.grow-rotate:hover, .grow-rotate:focus, .grow-rotate:active {
+    -webkit-transform: scale(1.1) rotate(4deg);
+    transform: scale(1.1) rotate(4deg);
+    cursor: pointerf;
 }
 
 
-.navmenu{
-  padding-top: 10%;
-
-
-}
 .nav {
 
     color: #000000;
@@ -354,7 +353,7 @@ body {
 }
 
     /*box-shadow: 0px -0.5px 1px 0px rgba(0, 0, 0, 0.15), -1px 0px 2px 0px rgba(0, 0, 0, 0.15), 1px 0px 2px 0px rgba(0, 0, 0, 0.15), 0px 5px 10px 0px rgba(0, 0, 0, 0.22);
-*/}
+}*/
 
 /*.portfolio:active {
     border-color: #404041;
@@ -362,22 +361,21 @@ body {
 }*/
 .label1 {
     background: #bf395b;
-
     width: 100%;
     height: 100%;
     border-radius: 0;
-    opacity: 1;
+    opacity: 0;
     /*-webkit-transition: opacity 0.1s ease-in-out 0s;
     -moz-transition: opacity 0.1s ease-in-out 0s;
     -o-transition: opacity 0.1s ease-in-out 0s;
     transition: opacity 0.1s ease-in-out 0s;*/
-    z-index: 1000;
+    /*z-index: 1000;*/
     text-align: center;
 
     border-radius: 3px;
     position: absolute;
 
-
+    display: table;
     /*use this is want border on hover*/
     /*border: 2px solid #404041;
     margin: 0;
@@ -385,18 +383,21 @@ body {
 }
 
 .label1 .label_text {
-
+    text-align: center;
     width: 100%;
     height: 100%;
-    background-color: #f5f5f5;
+    /*background-color: #f5f5f5;*/
+    /*background-color: black;*/
     display: table-cell;
     vertical-align: middle;
-    border: 0;
+
+    color: white;
     font-size: 1.5em;
     line-height: 1em;
     letter-spacing: .07em;
     font-family: yregFont;
-    border-radius: 4px;
+    /*border-radius: 4px;*/
+
     /*text-transform: uppercase;*/
 
     /*margin-top: 50%;
@@ -409,13 +410,13 @@ body {
     height:100%;
     font-size: 18px;
     line-height: 1em;
-    letter-spacing: .07em
+    letter-spacing: .07emf
     */
-    opacity: 0;
+    /*opacity: 0;*/
 }
 
 .label1:hover {
-    opacity: 0;
+    opacity: 0.8;
 }
 
 .element1 {
