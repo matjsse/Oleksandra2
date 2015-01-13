@@ -194,17 +194,20 @@ body {
     margin-right: auto;
     height: 100%;
 
+
 }
 
 
 .absolute-bottom{
    bottom:20px;
    position: absolute;
+    width: 100%;
 }
 
 
 .absolute-parent {
   height: 100%;
+
   position: relative;
 }
 
