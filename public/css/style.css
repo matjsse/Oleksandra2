@@ -181,6 +181,7 @@ body {
     height: 10em;
     padding: 0;
     margin: 0;
+
 }
 
 
@@ -192,6 +193,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     height: 100%;
+
 }
 
 
@@ -242,7 +244,7 @@ body {
 .grow-rotate:hover, .grow-rotate:focus, .grow-rotate:active {
     -webkit-transform: scale(1.1) rotate(4deg);
     transform: scale(1.1) rotate(4deg);
-    cursor: pointerf;
+    cursor: pointer;
 }
 
 
@@ -346,7 +348,7 @@ body {
 
 .portfolio:hover {
     cursor: pointer;
-    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.5);
     transition-delay: 0s;
     background-color: white;
 
@@ -392,10 +394,11 @@ body {
     vertical-align: middle;
 
     color: white;
-    font-size: 1.5em;
+    font-size: 3em;
     line-height: 1em;
     letter-spacing: .07em;
-    font-family: yregFont;
+    font-family: sourceBlackFont;
+
     /*border-radius: 4px;*/
 
     /*text-transform: uppercase;*/
@@ -415,8 +418,32 @@ body {
     /*opacity: 0;*/
 }
 
+.label_frstrs{
+
+    background-color:rgba(94,39,80,0.75);
+}
+
+.label_tca{
+
+    background-color:rgba(255,98,79,0.6);
+}
+
+.label_blm{
+
+    background-color:rgba(208,209,97,0.8);
+}
+ .label_afnn{
+     background-color: rgba(176,180,187,0.5);
+ }
+
 .label1:hover {
-    opacity: 0.8;
+    opacity: 1;
+    /*transition-delay: 0.15s;*/
+    -webkit-transition-duration: 0.25s;
+    -moz-transition-duration: 0.25s;
+    -ms-transition-duration: 0.25s;
+    -o-transition-duration: 0.25s;
+    transition-duration: 0.25s;
 }
 
 .element1 {
@@ -434,13 +461,13 @@ body {
 
 .element3 {
     background-image: url("../img/blm_thumbnail.jpg");
-    background-size: 90px;
+
     background-size: cover;    background-repeat: no-repeat;
 }
 
 .element4 {
-    background-image: url("../img/portfolio_elements-11.png");
-    background-size: 90px;
+    background-image: url("../img/photo_afn_mockupx2000+.jpg");
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
@@ -526,9 +553,9 @@ br {
 
 .workcontainer {
     display: block;
-    margin: 0 auto;
+    margin: auto auto;
     width: 100%;
-    max-width: 765px;
+    max-width: 960px;
 
 }
 
@@ -592,6 +619,10 @@ p {
     margin: 0 auto;
     width: 100%;
     max-width: 765px;
+}
+
+.frstrs_img {
+    max-width: 960px;
 }
 
 ::-webkit-scrollbar {

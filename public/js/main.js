@@ -42,14 +42,14 @@ $(function () {
            // $("html, body").animate({ scrollTop: 0 });
             window.scrollTo(0, 0);
         },
-        'work_mnb': function () {
+        'work_blm': function () {
             currentPage.hide();
             currentPage = birds[4];
             currentPage.show();
            // $("html, body").animate({ scrollTop: 0 });
             window.scrollTo(0, 0);
         },
-        'work_lnl': function () {
+        'work_afnn': function () {
             currentPage.hide();
             currentPage = birds[5];
             currentPage.show();
@@ -110,10 +110,10 @@ $(function () {
         routie('work_ss');
     });
     $('.element3').click(function () {
-        routie('work_mnb');
+        routie('work_blm');
     });
     $('.element4').click(function () {
-        routie('work_lnl');
+        routie('work_afnn');
     });
     $('.element5').click(function () {
         routie('work_bindingslogo');
@@ -147,9 +147,9 @@ $(function () {
         pages[3] = $(".page3");
         pages[3].html(Handlebars.templates['work_ss']());
         pages[4] = $(".page4");
-        pages[4].html(Handlebars.templates['work_mindandbody']());
+        pages[4].html(Handlebars.templates['work_blm']());
         pages[5] = $(".page5");
-        pages[5].html(Handlebars.templates['work_lnl']());
+        pages[5].html(Handlebars.templates['work_afnn']());
         pages[6] = $(".page6");
         pages[6].html(Handlebars.templates['work_bindingslogo']());
         pages[7] = $(".page7");
