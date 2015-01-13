@@ -448,6 +448,10 @@ body {
     background-color:rgba(215,26,96,0.5);
 }
 
+.label_yrp{
+    background-color: rgba(213,160,0,0.5);
+}
+
 .label1:hover {
     opacity: 1;
     /*transition-delay: 0.15s;*/
@@ -466,8 +470,8 @@ body {
 }
 
 .element2 {
-    background-image: url("../img/portfolio_elements-09.png");
-    background-size: 90px;
+    background-image: url("../img/yrp_pht_mckp_car.jpg");
+    background-size: cover;
     background-repeat: no-repeat;
 }
 

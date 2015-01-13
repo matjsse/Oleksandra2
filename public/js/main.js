@@ -35,7 +35,7 @@ $(function () {
             currentPage.show();
             window.scrollTo(0, 0);
         },
-        'work_ss': function () {
+        'work_yrp': function () {
             currentPage.hide();
             currentPage = birds[3];
             currentPage.show();
@@ -107,7 +107,7 @@ $(function () {
         routie('work_tca');
     });
     $('.element2').click(function () {
-        routie('work_ss');
+        routie('work_yrp');
     });
     $('.element3').click(function () {
         routie('work_blm');
@@ -145,7 +145,7 @@ $(function () {
         pages[2] = $(".page2");
         pages[2].html(Handlebars.templates['work_tca']());
         pages[3] = $(".page3");
-        pages[3].html(Handlebars.templates['work_ss']());
+        pages[3].html(Handlebars.templates['work_yrp']());
         pages[4] = $(".page4");
         pages[4].html(Handlebars.templates['work_blm']());
         pages[5] = $(".page5");
