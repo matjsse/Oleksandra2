@@ -5,20 +5,42 @@
     src: url("../fonts/SourceSansPro-Black.otf");
 }
 
+@font-face {
+    font-family: sourceLightFont;
+    src: url("../fonts/SourceSansPro-Light.otf");
+}
+
 html {
-    border: 10px;
-    border-style: solid;
-    border-color: black;
+
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding:0px;
+    background-color: #F3F3F3;
+
 
 }
 
 body{
-    background-color: #F3F3F3;
+    min-height: 100vh;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    background-color: #f3f3f3;
+    width: 100%;
+    font-family: sourceLightFont;
+
 }
 .navigation{
-    background-color: yellow;
-    height: 100px;
+    padding: 0px;
+    background-color: #ffffff;
+    height: 150px;
 
+}
+
+.os-row {
+    padding: 0px;
+    margin: 0px;
 }
 
 .name {
@@ -31,11 +53,123 @@ body{
     font-family: sourceBlackFont;
     font-size: 3em;
     text-align: right;
-    margin-top: -8% ;
 }
 
-
+.os-title{
+    /*position: absolute;*/
+    /*top:20px;*/
+    /*left:20px;*/
+    line-height: 3em;
+    margin-bottom: 0;
+    margin-top: 2%;
+    height: 94px;
+}
 
 .os-menu{
+    margin-top: 2%;
     display: inline-block;
+    height: 74px;
 }
+
+.os-menu-row {
+    display: table-cell;
+    vertical-align: bottom;
+}
+
+.container{
+    height:100%;
+    align-content: center;
+}
+.os-image{
+
+
+    height: 100%;
+width: 100%;
+}
+
+.os-cell{
+    height:300px;
+    background-image: url("../img/frstrs_drbl.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: greenyellow;
+    border-color: #000000;
+    border-width: 2px;
+    border-style: solid;
+    max-width: 350px;
+
+}
+/*//animation*/
+/*.radar-blip {*/
+    /*text-decoration: none;*/
+    /*width: 7%;*/
+    /*height:100px;*/
+    /*display: block;*/
+    /*color:transparent;*/
+    /*position:relative;*/
+    /*border-radius:100%;*/
+    /*float:left;*/
+/*}*/
+
+
+/*.radar-blip::before {*/
+    /*content:"";*/
+    /*width: 10px;*/
+    /*height:10px;*/
+    /*position:absolute;*/
+    /*background:#efda67 ;*/
+    /*-webkit-transform: translate(-50%,-50%);*/
+    /*margin-left:50%;*/
+    /*margin-top:50%;*/
+    /*border-radius:100%;*/
+/*}*/
+
+
+/*.radar-blip::after {*/
+    /*content:"";*/
+    /*width: 100px ;*/
+    /*height:100px;*/
+    /*position:absolute;*/
+    /*margin-left:50%;*/
+    /*margin-top:50%;*/
+    /*border: 3px solid #efda67 ;*/
+    /*-webkit-transform: translate(-50%,-50%);*/
+    /*border-radius:100%;*/
+    /*-webkit-animation-name: blip;*/
+    /*-webkit-animation-duration: 5s;*/
+    /*-webkit-animation-timing-function: ease-out;*/
+    /*-webkit-animation-delay: 2s;*/
+    /*-webkit-animation-iteration-count: infinite;*/
+    /*-webkit-animation-play-state: running;*/
+    /*opacity:0;*/
+/*}*/
+
+/*.-offset-time-0:after {*/
+    /*-webkit-animation-delay: 0s;*/
+/*}*/
+/*.-offset-time-25:after {*/
+    /*-webkit-animation-delay: .25s;*/
+/*}*/
+/*.-offset-time-50:after {*/
+    /*-webkit-animation-delay: .50s;*/
+/*}*/
+/*.-offset-time-75:after {*/
+    /*-webkit-animation-delay: .75s;*/
+/*}*/
+/*.-offset-time-100:after {*/
+    /*-webkit-animation-delay: 1s;*/
+/*}*/
+
+/*@-webkit-keyframes blip {*/
+    /*from { width: 1px ;height:1px; opacity:1;}*/
+    /*to {width: 100px ;height:100px;opacity:0;}*/
+/*}*/
+
+/*.radar-blip:hover:after {*/
+    /*border-color:white;*/
+
+/*}*/
+
+/*.radar-blip:hover:before {*/
+    /*background: white;*/
+/*}*/
