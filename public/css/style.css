@@ -436,6 +436,15 @@ body {
      background-color: rgba(176,180,187,0.5);
  }
 
+.label_bindings{
+    background-color:rgba(0,149,159,0.5);
+}
+
+.label_vctr {
+
+    background-color:rgba(215,26,96,0.5);
+}
+
 .label1:hover {
     opacity: 1;
     /*transition-delay: 0.15s;*/
@@ -472,8 +481,8 @@ body {
 }
 
 .element5 {
-    background-image: url("../img/portfolio_elements-12.png");
-    background-size: 90px;
+    background-image: url("../img/graphic/bind_embroid.jpg");
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
@@ -484,8 +493,8 @@ body {
 }
 
 .element8 {
-    background-image: url("../img/portfolio_elements-14.png");
-    background-size: 90px;
+    background-image: url("../img/vctr_pht_mckp.jpg");
+    background-size: cover;
     background-repeat: no-repeat;
 }
 .element9 {
@@ -680,4 +689,9 @@ p {
     position: absolute;
    margin-left: auto;
     margin-right: auto;
+}
+
+.email-link {
+    text-transform: uppercase;
+    font-family: SourceBlackFont;
 }
