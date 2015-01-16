@@ -285,12 +285,14 @@ body {
 
 
 .inner-wrap {
+
     width: 90%;
     padding: 4%;
 
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
+    min-height: 80vh;
 }
 
 .content {
