@@ -36,6 +36,9 @@ img.bg {
         left: 50%;
         margin-left: -512px; /* 50% */
     }
+    .email-link{
+        font-size: 1.5em;
+    }
 
 
 }
@@ -59,6 +62,9 @@ img.bg {
     .copy {
         font-size: 1.3em;
     }
+    .email-link{
+        font-size: 1.5em;
+    }
 
 }
 
@@ -81,6 +87,10 @@ img.bg {
     .copy {
         font-size: 1.1em;
     }
+    .email-link{
+        font-size: 1.5em;
+    }
+
 
     /*.portfolio {
         margin: 20px;
@@ -107,6 +117,10 @@ img.bg {
         font-size: 1em;
     }
 
+    .email-link{
+        font-size: 1em;
+    }
+
     /*.portfolio {
         margin: 10px;
     }*/
@@ -128,6 +142,10 @@ img.bg {
         font-size: 1.6em;
         text-align: center;
     }
+    .email-link{
+        font-size: 1em;
+    }
+
 
     /*.portfolio {
         margin: 5px;
@@ -285,6 +303,7 @@ body {
 
 
 .inner-wrap {
+
 
     width: 90%;
     padding: 4%;
@@ -733,6 +752,10 @@ p {
 .email-link {
     text-transform: uppercase;
     font-family: SourceBlackFont;
+    text-align: center;
+    padding: 5px;
+    color: white;
+
 }
 
 /* Buzz Out */
