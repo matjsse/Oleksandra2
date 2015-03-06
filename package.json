@@ -15,6 +15,7 @@
         "ejs": "~0.8.5",
         "less-middleware": "1.0.x",
         "requirejs": "*",
+        "request": "^2.53.0",
         "sendgrid": "0.4.4"
     },
     "devDependencies": {

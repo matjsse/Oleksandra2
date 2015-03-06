@@ -83,7 +83,7 @@ $(function () {
             currentPage.show();
             // $("html, body").animate({ scrollTop: 0 });
             window.scrollTo(0, 0);
-        },
+        }
     });
 
 
@@ -161,6 +161,31 @@ $(function () {
 
         return pages;
     }
+
+
+    /**
+     * Call to get all the postsss
+     */
+    $.get( "/api/blog").done(function(data){
+        var blogMenuEl =  $('.blog_menu');
+        console.log(blogMenuEl);
+        if(data && data.posts) {
+            var posts = data.posts;
+            for (var i = 0; i < posts.length; i++) {
+
+                var model = {
+                    blogTitle: posts[i].title,
+                    blogContent: posts[i].content
+                };
+                var blogPostElement = Handlebars.templates['blog_post'](model);
+
+                console.log(blogPostElement);
+                blogMenuEl.append(blogPostElement);
+            }
+        }
+    }).fail(function(){
+        console.log("Blog api failed to load data")
+    });
 
 });
 
